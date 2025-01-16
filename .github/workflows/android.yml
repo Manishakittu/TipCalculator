@@ -6,12 +6,36 @@ on:
       - main
 
 jobs:
-  build:
+  version of your workflow file:
+
+```yaml
+name: Android CI build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    -
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  name: Checkout code
+      uses: actions/checkout@ build:
+    runs-on: ubuntu-latest
+
+    steps:
+    -v2
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'tem name: Checkout code
+      uses: actions/checkout@urin'
+        java-version: '11'
+
+    - name: Install Dependenciesv2
 
     - name: Set up JDK 11
       uses: actions/setup-java@v2
@@ -20,7 +44,16 @@ jobs:
         java-version: '11'
 
     - name: Install Dependencies
-      run: sudo apt-get install -y <TipCalculator>
+      run: sudo apt-get update && sudo apt
+      run: sudo apt-get install -y <dependencies-you-need>
 
-    - name: Build with Gradle
+    - name: Build with Gradle-get install -y openjdk-11-jdk
+
+    - name: Build with
       run: ./gradlew build
+
+This removes the project. For example, if you need to install ` placeholder and installs the `openjdk-11-jdk` packagegradle`, you can replace it with `gradle`:
+
+```yaml
+    -, which is needed for the Gradle build. Commit these name: Install Dependencies
+      run: sudo apt-get install -y gradle
